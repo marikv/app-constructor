@@ -1,0 +1,110 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "App Constructor",
+        "description": "Top Insurance APIs (a REST API for AppConstructor)",
+        "version": "1.0.0"
+    },
+    "host": "localhost:8000",
+    "basePath": "/api/",
+    "schemes": [
+        "https",
+        "http"
+    ],
+    "paths": {
+        "/calc": {
+            "post": {
+                "tags": [
+                    "calculator"
+                ],
+                "summary": "mobile_applications",
+                "description": "mobile_applications",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "JSON for calculation",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "AppConstructor": {
+                                    "description": "calculator",
+                                    "type": "string",
+                                    "example": "111111"
+                                },
+                                "eeeeeeeee": {
+                                    "description": "calculator",
+                                    "type": "string",
+                                    "example": "rrrrrrrr"
+                                },
+                                "rrrrr": {
+                                    "description": "calculator",
+                                    "type": "integer",
+                                    "example": 12
+                                },
+                                "ttttttt": {
+                                    "description": "calculator",
+                                    "type": "object",
+                                    "items": {}
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "format": "application/json"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "422": {
+                        "description": "Missing Data"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "InsuranceCompany": {
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "string"
+                },
+                "detail": {
+                    "type": "string"
+                },
+                "full_name": {
+                    "type": "string"
+                }
+            }
+        },
+        "Product": {
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "string"
+                },
+                "detail": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

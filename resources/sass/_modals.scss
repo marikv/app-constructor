@@ -1,0 +1,8 @@
+.modal-xl {
+  max-width: calc(100% - 60px);
+}
+@media (max-width: 576px) {
+  .modal-xl {
+    max-width: calc(100% - 10px);
+  }
+}
