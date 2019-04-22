@@ -1,8 +1,19 @@
-.modal-xl {
-  max-width: calc(100% - 60px);
-}
-@media (max-width: 576px) {
+
+.app-constructor__wrapper {
   .modal-xl {
-    max-width: calc(100% - 10px);
+    max-width: calc(100% - 60px);
+  }
+
+  .app-constructor__content {
+    height: calc(100vh - 90px);
+  }
+
+  @media (max-width: 576px) {
+    .modal-xl {
+      max-width: calc(100% - 10px);
+    }
+    .app-constructor__content {
+      height: calc(100vh - 50px);
+    }
   }
 }

@@ -1,6 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700&amp;
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700&subset=cyrillic);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@charset "UTF-8";
 
-subset=cyrillic);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@charset "UTF-8";
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 
 :root {
   --blue: #3490dc;
@@ -10743,13 +10748,31 @@ body {
   cursor: pointer;
 }
 
-.modal-xl {
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn[disabled] {
+  cursor: no-drop;
+}
+
+.app-constructor__wrapper .modal-xl {
   max-width: calc(100% - 60px);
 }
 
+.app-constructor__wrapper .app-constructor__content {
+  height: calc(100vh - 90px);
+}
+
 @media (max-width: 576px) {
-  .modal-xl {
+  .app-constructor__wrapper .modal-xl {
     max-width: calc(100% - 10px);
+  }
+
+  .app-constructor__wrapper .app-constructor__content {
+    height: calc(100vh - 50px);
   }
 }
 

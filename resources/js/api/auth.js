@@ -1,6 +1,10 @@
 export default transport => ({
+	async loadUserData() {
+		return transport.get('/user/loadUserData');
+	},
+
 	async getUser() {
-		const response = await transport.get('/user/get_user');
+		const response = await transport.get('/auth/get_user');
 
 		return response.data;
 	},

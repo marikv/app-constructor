@@ -5,3 +5,11 @@
   border: none;
   cursor: pointer;
 }
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn[disabled] {
+  cursor: no-drop;
+}

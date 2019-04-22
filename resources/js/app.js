@@ -22,6 +22,6 @@ new Vue({
 	el: '#appDash',
 	store,
 	mounted() {
-		this.$store.dispatch('getUserData');
+		this.$store.dispatch('loadUserData');
 	},
 });
